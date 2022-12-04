@@ -1,0 +1,46 @@
+<body>
+<header>
+</header>
+
+<%= stylesheet_link_tag 'access', :media => "all" %>
+<%= link_to "戻る", hairs_index_path %>
+<%= image_tag 'access.png',class: "access" %>
+access.png
+
+<%= image_tag 'access_frame.png',class: "access_frame" %>
+
+<main>
+    <section id="location">
+        <div class="location-img fixed-bg">
+            <h4 class="sec-title">LOCATION</h4>
+        </div>
+
+            <div class="location-content wrapper">
+                <div class="location-item">
+                    
+                    <div class="item-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.763434032872!2d135.7847414757383!3d34.76155157994545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60013d0b2c138ccf%3A0x12938e80fa2ca7a8!2z44CSNjE5LTAyNDAg5Lqs6YO95bqc55u45qW96YOh57K-6I-v55S656Wd5ZyS6KW_77yR5LiB55uu77yS4oiS77yU!5e0!3m2!1sja!2sjp!4v1668098884729!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="item-info">
+                        <p>
+                            〒619-0240
+                            京都府相楽郡精華町祝園西1-2-4  グリーンヒル 103
+                        </p>
+                        <p>
+                            Open <br>
+                            9:30am to 6:30pm
+                        </p>
+                        <p>Tel : 0774-93-2275</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+<br>
+<%= image_tag 'bike.PNG',class: "bike" %>
+
+
+
+
+
+<%= link_to "back", hairs_index_path, class: "back_link" %>

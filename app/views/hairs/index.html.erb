@@ -1,0 +1,61 @@
+<body>
+<header>
+</header>
+
+<%= stylesheet_link_tag 'index', :media => "all" %>
+
+<%= image_tag 'top_frame', class: "top_frame" %>
+<%= image_tag 'BCBGロゴマーク.png',class: "BCBGlogo" %>
+<%= image_tag 'orange.png',class: "orange" %>
+<%= image_tag 'BCBG_image.png',class: "BCBG_image" %>
+
+
+<%= image_tag 'image 3.png',class: "image_3" %>
+<%= image_tag 'EF80A66E-C28C-4DB7-BB23-42E199E2060B.PNG', class: "img" %> 
+
+
+
+<div class="menu_bar">
+    <%= link_to 'concept', :controller => "hairs", :action => "about" %>
+    <%= link_to 'company', :controller => "hairs", :action => "company" %>
+    <%= link_to 'menu', :controller => "hairs", :action => "menu" %>
+    <%= link_to 'access', :controller => "hairs", :action => "access" %>
+</div>
+
+<%= image_tag 'index.hito.png',class: "index_hito" %>
+
+
+<br>
+    <div class="scroll">
+        <span class="txt">Scroll</span>
+    </div>
+</br>
+
+<%= image_tag 'under_frame.png', class: "under_frame" %>
+
+
+<div class="post">
+<br><% @posts.each do |post| %>
+    <div class="post1">
+        <td><%= post.content %></td>
+        <%= image_tag post.image_url, size: "250x200" if post.image? %>
+    </div>
+
+    <% end %>
+</div>
+
+
+
+
+<footer class="footer">
+    
+    <%= image_tag 'Group 11.png',class: "group_11" %>
+    
+    <div class="footer_menu_bar">
+        <%= link_to ' concept', :controller => "hairs", :action => "about" %>
+        <%= link_to 'company', :controller => "hairs", :action => "company" %>
+        <%= link_to 'menu', :controller => "hairs", :action => "menu" %>
+        <%= link_to 'access', :controller => "hairs", :action => "access" %>
+    </div>
+</footer>
+</body>

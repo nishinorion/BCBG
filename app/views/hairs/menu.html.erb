@@ -1,0 +1,43 @@
+<body>
+<header>
+</header>
+
+<div>
+
+<p>cutのみ</p>
+
+</div>
+
+<%= stylesheet_link_tag 'menu', :media => "all" %>
+
+
+<%= form_tag({controller:"hairs",action:"menu"}, method: :get) do %>
+            <%= check_box_tag :cut, 1575 %>
+            <%= label_tag :cut, "小学生" %>
+
+            <%= check_box_tag :cut2, 1890 %>
+            <%= label_tag :cut2, "中学生" %>
+
+            <%= check_box_tag :cut3, 2205 %>
+            <%= label_tag :cut3, "高校生" %>
+
+            <%= check_box_tag :cut4, 3150 %>
+            <%= label_tag :cut4, "一般" %>
+
+            <%= check_box_tag :color, 6000 %>
+            <%= label_tag :color, "カラー" %>
+
+            <br>
+            <%= submit_tag '計算する' %>
+            </br>
+
+<% end %>
+
+
+
+<br>
+<%= @total %>円
+</br>
+
+
+<br><%= link_to "戻る", hairs_index_path %></br>

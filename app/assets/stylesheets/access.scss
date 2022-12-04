@@ -1,0 +1,62 @@
+header{
+    height: 20px;
+    background-color: #000;
+}
+
+.access_frame{
+    margin: auto;
+    display: block;
+    width: 94vw;
+    top: 45px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+
+.Group 11{
+    
+}
+
+
+.sec-title{
+    
+}
+
+#location .item-map {
+    filter: grayscale(1);
+    margin-bottom: 20px;
+    width: fit-content;
+    border: black solid 13px;
+}
+
+
+
+.item-map > iframe {
+    width: 50vw;
+    height: 30vw;
+
+}
+
+.access{
+    margin: auto;
+    display: block;
+    margin-left: 7vw;
+    width: 25vw;
+    position: absolute;
+    top: 7vw;
+}
+
+.bike{
+    position: absolute;
+    width: 23vw;
+    right: 10vw;
+    top: 35vw;
+}
+
+.back_link{
+    position: absolute;
+    top: 63vw;
+    right: 6vw;
+}

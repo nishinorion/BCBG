@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'posts', :media => "all" %>
+<h1>New Post</h1>
+
+<%= render 'form', post: @post %>
+<% if false %>
+<div class="field">
+    <%= form_for(@post, :url => { controller:'posts', action:'create'}) do |f| %>
+        <%= f.label :image %>
+        <%= f.file_field :image %>
+    <% end %>
+
+</div>
+<% end %>
+<%= link_to 'Back', posts_path %>
